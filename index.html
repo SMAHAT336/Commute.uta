@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commute | UTA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">Commute</div>
+
+        <button class="sign-in">Sign In</button>
+    </nav>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <p class="eyebrow">UTA COMMUTER COMMUNITY</p>
+
+            <h1>
+                Your commute<br>
+                shouldn’t mean<br>
+                missing out.
+            </h1>
+
+            <p class="hero-text">
+                Meet UTA students who share your commute,
+                schedule, interests, and campus life.
+            </p>
+
+            <button class="start-button" onclick="showProfile()">
+                Join the UTA community
+            </button>
+
+        </section>
+
+
+        <!-- Preview Section -->
+        <section class="preview">
+
+            <div class="preview-header">
+                <p class="eyebrow">COMMUTE CONNECTIONS</p>
+
+                <h2>Who’s going your way?</h2>
+
+                <p>
+                    Find students who share more than just the same campus.
+                </p>
+            </div>
+
+
+            <!-- Example Student Card -->
+            <div class="student-card">
+
+                <div class="student-avatar">
+                    A
+                </div>
+
+                <div class="student-info">
+                    <h3>Alex</h3>
+
+                    <p>
+                        Business • Junior
+                    </p>
+
+                    <span>
+                        📍 Arlington
+                    </span>
+                </div>
+
+                <div class="match">
+                    92% match
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Profile Section -->
+<!-- Verification Section -->
+<section id="verification-section" class="app-screen">
+    <div class="verification-container">
+
+        <p class="eyebrow">UTA STUDENT VERIFICATION</p>
+
+        <h2>Are you a UTA student?</h2>
+
+        <p>
+            Verify your UTA student email to join the Commute community.
+        </p>
+
+        <form id="email-form">
+
+            <label for="student-email">
+                UTA student email
+            </label>
+
+            <input
+                type="email"
+                id="student-email"
+                placeholder="yourname@mavs.uta.edu"
+                required
+            >
+
+            <button type="submit" class="start-button">
+                Send verification code
+            </button>
+
+        </form>
+
+
+        <!-- Code Entry -->
+        <div id="code-section" class="code-section">
+
+            <p class="code-message">
+                We sent a verification code to your UTA email.
+            </p>
+
+            <label for="verification-code">
+                Verification code
+            </label>
+
+            <input
+                type="text"
+                id="verification-code"
+                placeholder="Enter 6-digit code"
+                maxlength="6"
+            >
+
+            <button
+                type="button"
+                class="start-button"
+                onclick="verifyCode()"
+            >
+                Verify student email
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+            <div class="profile-container">
+
+                <p class="eyebrow">LET'S GET STARTED</p>
+
+                <h2>Tell us about yourself.</h2>
+
+                <p>
+                    We'll use your answers to help you find
+                    students you'll actually connect with.
+                </p>
+
+
+                <form id="profile-form">
+
+                    <label for="name">First name</label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your first name"
+                        required
+                    >
+
+
+                    <label for="major">Major</label>
+
+                    <input
+                        type="text"
+                        id="major"
+                        placeholder="Example: Finance"
+                        required
+                    >
+
+
+                    <label for="year">Year</label>
+
+                    <select id="year" required>
+
+                        <option value="">
+                            Select your year
+                        </option>
+
+                        <option value="Freshman">
+                            Freshman
+                        </option>
+
+                        <option value="Sophomore">
+                            Sophomore
+                        </option>
+
+                        <option value="Junior">
+                            Junior
+                        </option>
+
+                        <option value="Senior">
+                            Senior
+                        </option>
+
+                    </select>
+
+
+                    <label for="area">Where do you commute from?</label>
+
+                    <input
+                        type="text"
+                        id="area"
+                        placeholder="Example: South Arlington"
+                        required
+                    >
+
+
+                    <button type="submit" class="start-button">
+                        Create my profile
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <p>Commute — UTA</p>
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>

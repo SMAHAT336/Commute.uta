@@ -1,0 +1,409 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f7f5;
+    color: #171717;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    height: 80px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f7f7f5;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.sign-in {
+    background: transparent;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+    padding: 110px 7% 100px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.eyebrow {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 22px;
+    color: #666;
+}
+
+.hero h1 {
+    font-size: clamp(55px, 8vw, 92px);
+    line-height: 0.98;
+    letter-spacing: -5px;
+    max-width: 850px;
+    margin-bottom: 35px;
+}
+
+.hero-text {
+    font-size: 19px;
+    color: #666;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.start-button {
+    background: #111;
+    color: white;
+    border: none;
+    padding: 17px 25px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.start-button:hover {
+    transform: translateY(-2px);
+    background: #333;
+}
+
+
+/* =========================
+   PREVIEW
+========================= */
+
+.preview {
+    padding: 100px 7%;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.preview-header {
+    max-width: 650px;
+    margin: 0 auto 50px;
+}
+
+.preview-header .eyebrow {
+    color: #aaa;
+}
+
+.preview-header h2 {
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.preview-header p:last-child {
+    color: #aaa;
+    font-size: 17px;
+}
+
+
+/* =========================
+   STUDENT CARD
+========================= */
+
+.student-card {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #1d1d1d;
+    border: 1px solid #333;
+    border-radius: 18px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.student-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #ddd;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.student-info {
+    flex: 1;
+}
+
+.student-info h3 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.student-info p {
+    color: #aaa;
+    font-size: 14px;
+}
+
+.student-info span {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.match {
+    font-size: 13px;
+    font-weight: 700;
+    background: white;
+    color: #111;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+
+/* =========================
+   PROFILE SECTION
+========================= */
+
+.profile-section {
+    display: none;
+    padding: 100px 7%;
+    background: #f7f7f5;
+}
+
+.profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile-container h2 {
+    font-size: clamp(40px, 6vw, 65px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.profile-container > p {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+#profile-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+#profile-form label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#profile-form input,
+#profile-form select {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    font-size: 15px;
+    outline: none;
+}
+
+#profile-form input:focus,
+#profile-form select:focus {
+    border-color: #111;
+}
+
+#profile-form .start-button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 30px 7%;
+    background: #111;
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navbar {
+        height: 70px;
+        padding: 0 6%;
+    }
+
+    .hero {
+        padding: 80px 6%;
+        min-height: 600px;
+    }
+
+    .hero h1 {
+        letter-spacing: -3px;
+    }
+
+    .preview {
+        padding: 80px 6%;
+    }
+
+    .student-card {
+        align-items: flex-start;
+    }
+
+    .match {
+        margin-left: auto;
+    }
+
+    .profile-section {
+        padding: 80px 6%;
+    }
+
+}/* =========================
+   APP SCREEN TRANSITIONS
+========================= */
+
+.app-screen {
+    min-height: calc(100vh - 80px);
+    padding: 100px 7%;
+    display: none;
+}
+
+.app-screen.active {
+    display: block;
+}
+
+.verification-container {
+    max-width: 550px;
+}
+
+.verification-container h2 {
+    font-size: clamp(45px, 6vw, 70px);
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 20px;
+}
+
+.verification-container > p {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 40px;
+}
+
+#email-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#email-form label,
+#code-section label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+#email-form input,
+#code-section input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+    font-size: 16px;
+    outline: none;
+}
+
+#email-form input:focus,
+#code-section input:focus {
+    border-color: #111;
+}
+
+.code-section {
+    display: none;
+    margin-top: 35px;
+}
+
+.code-message {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+#code-section {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#code-section.active {
+    display: flex;
+}.verification-container {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#email-form,
+#code-section {
+    text-align: left;
+}
